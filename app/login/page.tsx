@@ -30,12 +30,15 @@ export default function Login() {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full">
         <div className="hidden sm:block">
+          <div className="relative w-full h-screen">
           <Image
-            className="w-full h-full object-cover"
+            className="object-cover"
             src="/images/login.jpg"
             alt="Login Image"
+            fill
             priority
           />
+          </div>
         </div>
 
         <div className="bg-gray-800 flex flex-col justify-center">

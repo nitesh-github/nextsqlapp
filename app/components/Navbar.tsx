@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-
+import { signOut } from "next-auth/react";
 const Navbar = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <Link className="hover:underline" href={"/"}>Home</Link>
           <Link className="hover:underline" href={"/"}>Profile</Link>
-          <Link className="hover:underline" href={"#"}>Logout</Link>
+          <Link className="hover:underline" href={"#"} onClick={() => signOut({ callbackUrl: "/" })}>Logout</Link>
         </div>
       </nav>
     </>

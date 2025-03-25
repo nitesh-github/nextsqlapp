@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ag-grid-community": "^33.2.1",
+    "ag-grid-react": "^33.2.1",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.7",
     "jsonwebtoken": "^9.0.2",
